@@ -2,8 +2,7 @@ import tempfile
 import win32api
 import win32print
 
-printer = (r'\\DESKTOP-CJR79TM\IMP TI')
-win32print.OpenPrinter(printer)
+win32print.SetDefaultPrinter = (r'\\DESKTOP-CJR79TM\IMP TI')
 
 arquivofile = tempfile.mktemp (".txt")
 
